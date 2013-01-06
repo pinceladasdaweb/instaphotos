@@ -1,0 +1,45 @@
+/*
++----------------------------------------------------------------+
+	Reset CSS					
++----------------------------------------------------------------+
+*/
+body,div,dl,dt,dd,ul,ol,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,textarea,p,blockquote,th,td,address {margin:0; padding:0}
+table {border-collapse:collapse; border-spacing:0; font-size:inherit}
+fieldset, img {border:0}
+a {color:#F05D94; margin:0; padding:0; text-decoration:none}
+
+/*
++----------------------------------------------------------------+
+	Extras														
++----------------------------------------------------------------+
+*/
+.alignleft {float:left}
+.alignright {float:right}
+.clearfix:before, .clearfix:after {content:"\0020"; display:block; height:0; visibility:hidden}
+.clearfix:after {clear:both}
+.clearfix {zoom:1}
+.clear {clear:both}
+
+/*
++----------------------------------------------------------------+
+	Definicoes Gerais														
++----------------------------------------------------------------+
+*/
+body {background:#e3e3e3 url(../img/background.png) no-repeat center top; font:62.5% Georgia, "Times New Roman", Times, serif}
+
+/*
++----------------------------------------------------------------+
+	Container														
++----------------------------------------------------------------+
+*/
+#container {margin:30px auto; width:810px}
+.loading {display:block; margin:0 auto}
+
+/*
++----------------------------------------------------------------+
+	Photos														
++----------------------------------------------------------------+
+*/
+.photo {background-color:#fff; border-radius:5px 5px 5px 5px; box-shadow:0 0 5px rgba(0, 0, 0, 0.3); float:left; height:250px; margin:5px; padding:5px; position:relative; width:250px}
+.photo img {height:250px; width:250px}
+.photo .heart {background:#fff url(../img/likes.png) no-repeat 4px -31px; border:1px solid #aaa; border-radius:5px; bottom:16px; color:#000; font:bold 12px "Lucida Grande", sans-serif; height:16px; left:13px; line-height:16px; padding:0 5px 0 22px; position:absolute}

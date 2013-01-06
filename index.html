@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Instaphotos - Display Instagram user feed with PHP, jQuery and Handlebars Template</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div id="container" class="clearfix"><img class="loading" src="img/ajax-loader.gif" alt="Loading" /></div>
+
+<script id="instagram-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="photo clearfix">
+	{{#if description}}
+		<a target="_blank" title="{{description}}" href="{{url}}"><img src="{{image}}" alt="{{description}}"></a><span class="heart">{{likes}}</span>
+	{{else}}
+		<a target="_blank" title="{{url}}" href="{{url}}"><img src="{{image}}" alt="{{url}}"></a><span class="heart">{{likes}}</span>
+	{{/if}}
+	</div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+<script type="text/javascript" src="src/instagram.js"></script>
+</body>
+</html>
