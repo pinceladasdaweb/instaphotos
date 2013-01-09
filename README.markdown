@@ -22,6 +22,26 @@ Display Instagram user feed with PHP, jQuery and Handlebars Template.
 	});
 ```
 
+##Customize Template
+
+1. To customize the template open the index.html file and look for the following block of code:
+
+```javascript
+<script id="instagram-template" type="text/x-handlebars-template">
+    {{#each this}}
+    <div class="photo clearfix">
+	{{#if description}}
+		<a target="_blank" title="{{description}}" href="{{url}}"><img src="{{image}}" alt="{{description}}"></a><span class="heart">{{likes}}</span>
+	{{else}}
+		<a target="_blank" title="{{url}}" href="{{url}}"><img src="{{image}}" alt="{{url}}"></a><span class="heart">{{likes}}</span>
+	{{/if}}
+	</div>
+    {{/each}}
+</script>
+```
+
+Change the HTML as it deems necessary.
+
 ## Authentication
 
 You can obtain a accessToken registering a new Instagram API client app at [http://instagram.com/developer/clients/manage/](http://instagram.com/developer/clients/manage/)
