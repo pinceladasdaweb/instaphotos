@@ -24,10 +24,8 @@ $accessToken = "YOUR_ACCESS_TOKEN_HERE";
 $getUser = "https://api.instagram.com/v1/users/search?q=".$username."&access_token=".$accessToken;
 $getId = get_curl($getUser);
 
-if($getId){
-    foreach(json_decode($getId)->data as $user){
-        $userid = $user->id;
-    }
+foreach(json_decode($getId)->data as $user){
+	$userid = $user->id;
 }
 
 $getImages = "https://api.instagram.com/v1/users/".$userid."/media/recent/?access_token=".$accessToken."&count=".$count;
@@ -45,6 +43,4 @@ foreach ($instagrams as $instagram){
 }
 
 print_r(json_encode($photos));
-
-die();
 ?>
