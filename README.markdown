@@ -18,7 +18,7 @@ Display Instagram user feed with PHP, jQuery and Handlebars Template.
     	template: $('#instagram-template').html(),	// The ID of your template
     	container: $('#container'),					// domNode to attach to
     	username: 'pinceladasdaweb',				// Instagram username
-    	count: '12'									// Number of photos to display
+    	count: 12									// Number of photos to display
 	});
 ```
 

@@ -39,5 +39,5 @@ Instaphotos.init({
     template: $('#instagram-template').html(),
     container: $('#container'),
     username: 'pinceladasdaweb',
-    count: '12'
+    count: 12
 });
