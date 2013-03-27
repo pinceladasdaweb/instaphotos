@@ -44,7 +44,7 @@ Change the HTML as it deems necessary.
 
 ## Authentication
 
-You can obtain a accessToken registering a new Instagram API client app at [http://instagram.com/developer/clients/manage/](http://instagram.com/developer/clients/manage/)
+You can obtain a accessToken here [http://www.pinceladasdaweb.com.br/instagram/access-token/](http://www.pinceladasdaweb.com.br/instagram/access-token/)
 
 ##License
 
