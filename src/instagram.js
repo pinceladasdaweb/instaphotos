@@ -7,8 +7,8 @@
 */
 var Instaphotos = {
     init: function(config) {
-		this.url = 'instaphotos.php?user=' + config.username + '&count=' + config.count + '';
-		this.template = config.template;
+        this.url = 'instaphotos.php?user=' + config.username + '&count=' + config.count + '';
+        this.template = config.template;
         this.container = config.container;
         this.fetch();
     },
@@ -24,7 +24,7 @@ var Instaphotos = {
             self.instagram = $.map(data, function(photo) {
                 return {
                     image: photo.image,
-					url: photo.url,
+                    url: photo.url,
                     description: photo.description,
                     likes: photo.likes
                 };
