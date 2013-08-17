@@ -7,8 +7,8 @@ Display Instagram user feed with PHP, jQuery and Handlebars Template.
 
 1. Paste right before your page's closing `</body>` tag
 ```html
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
 <script type="text/javascript" src="src/instagram.js"></script>
 ```
 
@@ -18,7 +18,7 @@ Display Instagram user feed with PHP, jQuery and Handlebars Template.
     	template: $('#instagram-template').html(),	// The ID of your template
     	container: $('#container'),					// domNode to attach to
     	username: 'pinceladasdaweb',				// Instagram username
-    	count: 12									// Number of photos to display
+    	count: 12									// Number of photos to display, default 12
 	});
 ```
 
