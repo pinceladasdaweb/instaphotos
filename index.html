@@ -21,8 +21,16 @@
     {{/each}}
 </script>
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
 <script type="text/javascript" src="src/instagram.js"></script>
+<script type="text/javascript">
+	Instaphotos.init({
+	    template: $('#instagram-template').html(),
+	    container: $('#container'),
+	    username: 'pinceladasdaweb',
+	    count: 12
+	});
+</script>
 </body>
 </html>
