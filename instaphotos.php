@@ -18,20 +18,20 @@ function get_curl($url) {
     }
 }
 
-$username = $_GET['user'];
-$count = $_GET['count'];
+$username    = isset($_GET['user']) ? $_GET['user'] : NULL;
+$count       = isset($_GET['count']) ? $_GET['count'] : 12;
 $accessToken = "YOUR_ACCESS_TOKEN_HERE";
-$getUser = "https://api.instagram.com/v1/users/search?q=".$username."&access_token=".$accessToken;
-$getId = get_curl($getUser);
+$getUser     = "https://api.instagram.com/v1/users/search?q=".urlencode($username)."&access_token=".urlencode($accessToken);
+$getId       = get_curl($getUser);
 
 foreach(json_decode($getId)->data as $user){
 	$userid = $user->id;
 }
 
-$getImages = "https://api.instagram.com/v1/users/".$userid."/media/recent/?access_token=".$accessToken."&count=".$count;
+$getImages  = "https://api.instagram.com/v1/users/".urlencode($userid)."/media/recent/?access_token=".urlencode($accessToken)."&count=".urlencode($count);
 $loadImages = get_curl($getImages);
 $instagrams = json_decode($loadImages)->data;
-$photos = array();
+$photos     = array();
 
 foreach ($instagrams as $instagram){
     $photos[] = array(
@@ -42,5 +42,5 @@ foreach ($instagrams as $instagram){
     );
 }
 
-print_r(json_encode($photos));
+echo json_encode($photos);
 ?>
