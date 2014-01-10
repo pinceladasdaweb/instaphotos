@@ -6,22 +6,22 @@
 *
 */
 var Instaphotos = {
-    init: function(config) {
-        this.url = 'instaphotos.php?user=' + config.username + '&count=' + config.count + '';
+    init: function (config) {
+        this.url = 'instaphotos.php?user=' + config.username + '&count=' + config.count;
         this.template = config.template;
         this.container = config.container;
         this.fetch();
     },
-    attachTemplate: function() {
+    attachTemplate: function () {
         var template = Handlebars.compile(this.template);
 
         this.container.empty().append(template(this.instagram));
     },
-    fetch: function() {
+    fetch: function () {
         var self = this;
         
-        $.getJSON(self.url, function(data) {
-            self.instagram = $.map(data, function(photo) {
+        $.getJSON(self.url, function (data) {
+            self.instagram = $.map(data, function (photo) {
                 return {
                     image: photo.image,
                     url: photo.url,
