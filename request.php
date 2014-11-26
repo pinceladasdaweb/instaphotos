@@ -3,7 +3,7 @@ require_once( './api/Instagram.class.php' );
 
 $username = isset($_GET['user']) ? $_GET['user'] : NULL;
 $count    = isset($_GET['count']) ? $_GET['count'] : 12;
-$token    = '966633.5b9e1e6.af5ba38b258641ea95fc23d378809a41';
+$token    = '<PUT YOUR TOKEN HERE>';
 
 $api = new Instagram( $token );
 
