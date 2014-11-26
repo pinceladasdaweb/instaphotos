@@ -21,8 +21,14 @@
     {{/each}}
 </script>
 
+<!--[if lt IE 9]>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<![endif]-->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+<script type="text/javascript" src="/path/to/instagram.min.js"></script>
 <script type="text/javascript" src="../build/instagram.min.js"></script>
 <script type="text/javascript">
 	Instaphotos.init({
