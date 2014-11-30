@@ -49,7 +49,7 @@ Change the HTML as it deems necessary.
 
 ## Authentication
 
-You can obtain a accessToken here [http://www.pinceladasdaweb.com.br/instagram/access-token/](http://www.pinceladasdaweb.com.br/instagram/access-token/)
+In the [`request.php`](request.php) file enter your token, you can get one here: [http://www.pinceladasdaweb.com.br/instagram/access-token/](http://www.pinceladasdaweb.com.br/instagram/access-token/)
 
 ## Compatibility
 
