@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Instaphotos - Display Instagram user feed with PHP, jQuery and Handlebars Template</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Instaphotos - Display Instagram user feed with PHP, jQuery and Handlebars Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -12,12 +12,12 @@
 <script id="instagram-template" type="text/x-handlebars-template">
     {{#each this}}
     <div class="photo clearfix">
-	{{#if description}}
-		<a target="_blank" title="{{description}}" href="{{url}}"><img src="{{image}}" alt="{{description}}"></a><span class="heart">{{likes}}</span>
-	{{else}}
-		<a target="_blank" title="{{url}}" href="{{url}}"><img src="{{image}}" alt="{{url}}"></a><span class="heart">{{likes}}</span>
-	{{/if}}
-	</div>
+    {{#if description}}
+        <a target="_blank" title="{{description}}" href="{{url}}"><img src="{{image}}" alt="{{description}}"></a><span class="heart">{{likes}}</span>
+    {{else}}
+        <a target="_blank" title="{{url}}" href="{{url}}"><img src="{{image}}" alt="{{url}}"></a><span class="heart">{{likes}}</span>
+    {{/if}}
+    </div>
     {{/each}}
 </script>
 
@@ -28,14 +28,14 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!--<![endif]-->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-<script type="text/javascript" src="/path/to/instagram.min.js"></script>
+<script type="text/javascript" src="../build/instagram.min.js"></script>
 <script type="text/javascript">
-	Instaphotos.init({
-	    template: $('#instagram-template').html(),
-	    container: $('#container'),
-	    username: 'pinceladasdaweb',
-	    count: 12
-	});
+    Instaphotos.init({
+        template: $('#instagram-template').html(),
+        container: $('#container'),
+        username: 'pinceladasdaweb',
+        count: 18
+    });
 </script>
 </body>
 </html>
