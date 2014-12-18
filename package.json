@@ -1,7 +1,7 @@
 {
     "name": "Instaphotos",
     "description": "Display Instagram user feed with PHP, jQuery and Handlebars Template.",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "author": "Pedro Rogério",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
